@@ -39,7 +39,22 @@ class AxisCam:
         print(r.content.decode('utf-8'))
 
     def get_live_image(self):
-        """Gets the latest image from the camera and displays it using PIL package"""
+        """Gets the latest image from the camera
+
+        :return http status code, image:
+        """
+        r = requests.get(self.base_url + 'jpg/image.cgi')
+        print('Return status: ' + str(r.status_code))
+        if r.status_code == 200:
+            f = io.BytesIO(r.content)
+            img = Image.open(f)
+        return r.status_code, img
+
+    def display_live_image(self):
+        """Gets the latest image from the camera and displays it using PIL package
+
+        :return http status code:
+        """
         r = requests.get(self.base_url + 'jpg/image.cgi')
         print('Return status: ' + str(r.status_code))
         if r.status_code == 200:
@@ -47,6 +62,7 @@ class AxisCam:
             img = Image.open(f)
             img.show()
         return r.status_code
+
 
         # TODO
         # https://stackoverflow.com/questions/21702477/how-to-parse-mjpeg-http-stream-from-ip-camera
