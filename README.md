@@ -1,11 +1,11 @@
-pyaxiscam
+# **pyaxiscam**
 
 pyaxiscam is a Python library used to control Axis Communications IP cameras.  You can access information about the
 camera as well as grab images (and video stream in the future).
 
 
 
-Getting Started
+## **Getting Started**
 
 Your Axis camera must fir be set up using its web interface.  It is recommended to do this with Internet Explorer on a
 Windows PC for the best compatibility.  Once set up, you now have a host name (or IP address), username ('root' by
@@ -24,7 +24,7 @@ The image is displayed by the default image viewer.
 
 
 
-Prerequisites
+## **Prerequisites**
 
 requests,
 io,
