@@ -15,11 +15,15 @@ default), and the password.  Initialize and AxisCam object using the following l
 cam = AxisCam('host', 'username', 'password')
 
 A live image can be retrieved by using the following command:
-image = cam.get_live_image()
+
+    image = cam.get_live_image()
+
 This image can then be processed using OpenCV for example.
 
 A live image can be retrieved and displayed by using the following command:
-image = cam.display_live_image()
+
+    image = cam.display_live_image()
+
 The image is displayed by the default image viewer.
 
 
