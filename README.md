@@ -12,7 +12,7 @@ Windows PC for the best compatibility.  Once set up, you now have a host name (o
 default), and the password.  Initialize and AxisCam object using the following line - make sure to replace 'host',
 'username', and 'password' with the IP address, username and password determined in the setup:
 
-cam = AxisCam('host', 'username', 'password')
+    cam = AxisCam('host', 'username', 'password')
 
 A live image can be retrieved by using the following command:
 
