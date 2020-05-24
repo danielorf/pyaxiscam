@@ -7,6 +7,8 @@ camera as well as grab images (and video stream in the future).
 
 ## **Getting Started**
 
+__NOTE:  THIS LIBRARY USES "BASIC" AUTHENTICATION WITH HTTP, MEANING YOUR CREDENTIALS ARE SENT IN CLEARTEXT.  USE THIS FOR TESTING ONLY WITH THROWAWAY CREDS.__
+
 Your Axis camera must fir be set up using its web interface.  It is recommended to do this with Internet Explorer on a
 Windows PC for the best compatibility.  Once set up, you now have a host name (or IP address), username ('root' by
 default), and the password.  Initialize and AxisCam object using the following line - make sure to replace 'host',
